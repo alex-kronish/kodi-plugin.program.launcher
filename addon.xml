@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.launcher" name="ProcessLauncher" version="0.0.1" provider-name="Micolithe">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <disclaimer>For V19 Matrix or Newer</disclaimer>
+        <summary lang="en">Launch any program from Kodi on Linux</summary>
+        <description lang="en">Launch any program from Kodi on Linux</description>
+        <news>I have become death, destroyer of worlds.</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
