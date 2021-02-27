@@ -1,6 +1,8 @@
 [
-  {"name": "Open Firefox", "command": "/usr/bin/firefox","arg": "", "icon": "resources/media/firefox.png"},
-  {"name": "Open Google Chrome", "command": "/usr/bin/google-chrome-stable","arg": "", "icon": "resources/media/chrome.png"},
-  {"name": "Open Steam", "command": "/usr/games/steam -bigpicture","arg":"", "icon": "resources/media/steam.png"},
-  {"name": "Open Linux Terminal Window", "command": "/usr/bin/gnome-terminal","arg": "", "icon": "resources/media/terminal.png"}
+	{"name": "Open Firefox", "command": "/usr/bin/firefox","arg": "", "icon": "resources/media/firefox.png"},
+	{"name": "Open Google Chrome", "command": "/usr/bin/google-chrome-stable","arg": "", "icon": "resources/media/chrome.png"},
+	{"name": "Open Steam", "command": "/usr/games/steam","arg":"-bigpicture", "icon": "resources/media/steam.png"},
+	{"name": "Open Retroarch", "command": "/usr/bin/retroarch","arg": "", "icon": "resources/media/retroarch.png"},
+	{"name": "Open Parsec", "command": "/usr/bin/parsecd","arg": "", "icon": "resources/media/parsec.png"},
+	{"name": "Open Linux Terminal Window", "command": "/usr/bin/gnome-terminal","arg": "", "icon": "resources/media/terminal.png"}
 ]

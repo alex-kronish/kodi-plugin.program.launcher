@@ -33,14 +33,16 @@ def additems():  # builds the menu
     f.close()
 
 
-def build_url(query): # builds the plugin:// url for each menu entry
+def build_url(query):  # builds the plugin:// url for each menu entry
     string = base_url + '?' + urllib.parse.urlencode(query)
     # print(string)
     return string
 
 
 def launchproc(executable):  # subprocess is used to generate new windows
-    subprocess.call(executable, stdout=None, shell=True)
+    print(str(executable))
+    subprocess.call(executable, stdout=None, shell=False)
+
 
 # entry point for the plugin - this will run no matter what
 
@@ -55,10 +57,15 @@ mode = args.get('mode')
 if mode is None:  # if there's no parameter named "mode" we should just build the menu
     additems()
     xbmcplugin.endOfDirectory(addon_handle)
-if mode is not None and mode[0] == 'run':  # if there is a parameter named mode and its equal to run, execute the program
+if mode is not None and mode[0] == 'run':
+    # if there is a parameter named mode and its equal to run, execute the program
     # print("mode was found")
     prog = args.get('syscmd')
     arguments = args.get('arg')
-    # print(prog)
-    exe = [prog, arguments]
-    launchproc(prog)
+    print(prog)
+    print(arguments)
+    if arguments is None:
+        exe = prog[0]
+    else:
+        exe = [prog[0], arguments[0]]
+    launchproc(exe)
